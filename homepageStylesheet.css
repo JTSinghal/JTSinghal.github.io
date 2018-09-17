@@ -18,6 +18,16 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+a{
+	text-decoration: none;
+	color: black;
+	transition: color 0.2s;
+}
+
+a:hover{
+	color: #4286f4;
+}
  
 *{
 	padding: 0;
@@ -33,11 +43,13 @@ time, mark, audio, video {
 	top: 0;
 	border-bottom: 1px solid black;
 	position: fixed;
+	line-height: 9vh;
+	background-color: white;
 }
 
 #logo{
 	height: 100%;
-	width: 15%;
+	width: 25%;
 	margin-left: 2vw;
 	float: left;
 	border: 1px solid black;
@@ -45,10 +57,23 @@ time, mark, audio, video {
 
 #toolbar{
 	height: 100%;
-	width: 40%;
-	margin-right: 2vw;
+	width: 30%;
+	margin-right: 5vw;
 	float: right;
 	border: 1px solid black;
+}
+
+.toolbarMember{
+	height: 100%;
+	width: 25%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	transition: border-bottom 0.3s;
+}
+
+.toolbarMember:hover{
+	border-bottom: 5px solid #4286f4;
 }
 
 #bioSection{
@@ -72,6 +97,13 @@ time, mark, audio, video {
 	top: 50%;
 	border-radius: 50%;
 	border: 1px solid black;
+	transition: box-shadow 0.3s;
+}
+
+#personalPic:hover{
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 #bioDiv{
@@ -92,6 +124,43 @@ p{
 	line-height: 24px;
 	font-size: 20px;
 	margin: 2vh 1vh 2vh 1vh;
+}
+
+#projects{
+	width: 100%;
+	height: 50vh;
+	border-top: 1px solid black;
+	padding: 4vh;
+}
+
+#projectContainer{
+	width: 80vw;
+	height: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.project{
+	width: 20vw;
+	height: 100%;
+	border: 1px solid black;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	transition: 0.3s box-shadow;
+}
+
+.project:hover{
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.projectPicture{
+	width: 100%;
+	height: 80%;
+	border-bottom: 1px solid black;
 }
 
 #footer{
