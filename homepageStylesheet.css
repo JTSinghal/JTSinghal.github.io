@@ -80,6 +80,8 @@ a:hover{
 #bioSection{
 	height: 91vh;
 	width: 100%;
+	/*background-color: #3498db;*/
+	/*background-color: #4286f4;*/
 	margin-top: 9vh;
 }
 
@@ -119,6 +121,7 @@ a:hover{
 	position: relative;
 	transform: perspective(1px) translateY(-50%);
 	top: 50%;
+	/*color: #fff;*/
 }
 
 p{
@@ -185,7 +188,28 @@ p{
 	line-height: 34px;
 }
 
-#webGame > p{}
+#contactMe{
+	border-top: 1px solid black;
+	padding: 2vh 2vw 0 2vw;
+	text-align: center;
+}
+
+#emailInputField{
+	margin: auto;
+	display: block;
+	height: 4vh;
+	width: 70vw;
+}
+
+#submitButton{
+	height: 4vh;
+	width: 5vw;
+	line-height: 4vh;
+	border: 1px solid black;
+	border-radius: 20%;
+	margin: auto;
+	margin-bottom: 2vh;
+}
 
 #footer{
 	height: 9vh;
