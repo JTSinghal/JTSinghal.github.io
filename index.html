@@ -4,24 +4,21 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="indexStylesheet.css">
 		<title>Unnamed Website</title>
+
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	</head>
 
 	<body>
 		<div id="header">  <!-- is floating over the entire website -->
 			<div id="logo"></div>
 			<div id="toolbar">
-				<a href="">
-					<div class="toolbarMember">Projects</div>
-				</a>
+				<div class="toolbarMember" id="projectButton">Projects</div>
 				<a href="">
 					<div class="toolbarMember">Blog</div>
 				</a>
-				<a href="">
-					<div class="toolbarMember">Web Game</div>
-				</a>
-				<a href="">
-					<div class="toolbarMember">Contact Me</div>
-				</a>
+				<div class="toolbarMember" id="webGameButton">Web Game</div>
+				<div class="toolbarMember" id="contactButton">Contact Me</div>
 			</div>
 		</div>
 		<div id="bioSection">
@@ -67,10 +64,14 @@
 			<h1>My Browser-Based Game</h1>
 			<h3>Status: In-Development</h3>
 			<p>I am in the process of developing a game that can be played right in your web browser. The goal is simply to gain further web-development experience. It should be ready soon. Stay tuned!</p>
+			<div id="goToGameButton">
+				<p>Big button to game</p>
+			</div>
 		</div>
 		<div id="contactMe">
-			<p>Here is my email: jatinsinghal19@gmail.com      Email me about anything! Opportunities to work together, ideas for projects, or maybe even general complaints! :)</p>
-			<p>Enter your email here to joing the newsletter. Join the revolution</p>
+			<h1>Contact Me!</h1>
+			<p>Here is my email: jatinsinghal19@gmail.com------Email me about anything! Opportunities to work together, ideas for projects, or maybe even general complaints! :)</p>
+			<p>Enter your email here to join the newsletter and receive notifications. Join the revolution</p>
 			<input id="emailInputField" type="text" placeholder="Email address"><br>
 			<a href="" style="text-decoration: none; ">
 				<div id="submitButton">
@@ -79,7 +80,13 @@
 			</a>
 		</div>
 		<div id="footer">
-			
+			<p>
+				Copyright © 2018 <a href="" style="text-decoration: underline;">Jatin (JT) Singhal</a>
+			</p>
 		</div>
 	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="indexScript.js"></script>
+
 </html>

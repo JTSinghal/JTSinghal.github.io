@@ -71,6 +71,7 @@ a:hover{
 	float: left;
 	text-align: center;
 	transition: border-bottom 0.3s;
+	cursor: pointer;
 }
 
 .toolbarMember:hover{
@@ -169,7 +170,7 @@ p{
 
 #webGame{
 	width: 100%;
-	height: 30vh;
+	height: 50vh;
 	border-top: 1px solid black;
 	padding: 2vh 2vw 0 2vw;
 }
@@ -188,10 +189,39 @@ p{
 	line-height: 34px;
 }
 
+#goToGameButton{
+	height: 10vh;
+	width: 40%;
+	border: 1px solid black;
+	border-radius: 25px;
+	margin: auto;
+	margin-top: 6vh;
+	line-height: 10vh;
+	background-color: #bfbfbf;
+	transition: color 0.2s border 0.2s;
+	cursor: not-allowed;
+}
+
+#goToGameButton > *{
+	font-size: 20px;
+}
+
+#goToGameButton:hover{
+	color: #4286f4;
+	border: 1px solid #4286f4;
+}
+
 #contactMe{
+	height: 40vh;
 	border-top: 1px solid black;
 	padding: 2vh 2vw 0 2vw;
 	text-align: center;
+}
+
+#contactMe > h1{
+	text-align: center;
+	font-size: 32px;
+	line-height: 44px;
 }
 
 #emailInputField{
@@ -206,7 +236,7 @@ p{
 	width: 5vw;
 	line-height: 4vh;
 	border: 1px solid black;
-	border-radius: 20%;
+	border-radius: 25px;
 	margin: auto;
 	margin-bottom: 2vh;
 }
@@ -215,4 +245,9 @@ p{
 	height: 9vh;
 	width: 100%;
 	border-top: 1px solid black;
+}
+
+#footer > p{
+	text-align: center;
+	font-size: 12px;
 }
